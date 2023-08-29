@@ -1,0 +1,12 @@
+def createlst(x,y):
+    if y == 'asc':
+        x.sort()
+    elif y == 'desc':
+        x.sort(reverse=True)
+    elif y == 'none':
+      x
+    return x
+    
+
+sorted_lst = createlst([5,3,2,7,3],"desc")
+print(sorted_lst)
