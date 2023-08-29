@@ -1,0 +1,21 @@
+#pseudo code
+#type word
+#check string doesn't contain a space
+#if space, print error message
+#if no space, count vowels
+#print no. of vowels
+
+def getvowels():
+    while True:
+        vowels = ['a','e','i','o','u','A','E','I','O','U']
+        count = 0
+        word = str(input("Please type a word: "))  
+        if ' ' in word:
+            print("No spaces should be used. Please try again") 
+        else:
+            for i in range(len(word)):
+                if word[i] in vowels:
+                    count += 1
+            print("Number of vowels is: ", count)
+            
+getvowels()
