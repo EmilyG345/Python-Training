@@ -1,0 +1,13 @@
+def revlst():
+    bin = []
+    while True: 
+        try:
+            num = int(input("Please type a number up to 1024 "))
+            rem = num % 2
+            bin.append(rem)
+            print(bin[::-1])
+            
+        except ValueError:
+            print("That was invalid.  Try again...")
+                        
+revlst()
