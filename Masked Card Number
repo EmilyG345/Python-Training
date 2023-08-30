@@ -1,0 +1,20 @@
+##pseudo code
+#user input number
+#if number less than 16 digits/not a number, error try again
+#replace characters 1-12 with '#' 
+#print new number
+
+
+def mask_card_number():
+    while True:
+        num = input("Please insert 16-digit card number: ")
+        
+        if len(num) == 16 and num.isdigit():
+            # Mask the card number by replacing digits at specific indexes with '#'
+            masked_number = '#' * 12 + num[12:]
+            print(masked_number)
+            break  # Exit the loop if a valid input
+        else:
+            print("Oops! Looks like a typing error. Please try again.")
+
+mask_card_number()
