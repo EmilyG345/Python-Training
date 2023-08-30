@@ -1,0 +1,11 @@
+def equalox():
+    #user inputs a string of any variation of characters
+    string = input("Enter your input: ")
+    #create variables to hold sum of each o/x
+    x = string.count('x')
+    o = string.count('o')
+    
+    #return boolean result depending on whether they're equal
+    return x == o
+    
+equalox()
