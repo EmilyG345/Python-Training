@@ -1,0 +1,4 @@
+def discount(fp, di):
+    return (1-(di/100)) * fp
+
+discount(120,60)
