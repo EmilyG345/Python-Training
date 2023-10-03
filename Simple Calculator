@@ -1,0 +1,14 @@
+def calc(num1, ops, num2):
+    
+    if ops == "+":
+        return num1+num2
+    elif ops == "-":
+        return num1-num2
+    elif ops == "x":
+        return num1*num2
+    elif ops == "/":
+        return num1/num2
+    else:
+        print("error")
+    
+calc(4,"/",6)
