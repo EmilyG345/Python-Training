@@ -1,0 +1,6 @@
+def numonly():
+    user_input = input("Enter numbers or letters: ")
+    nums = [char for char in user_input if char.isdigit()]
+    print(nums)
+
+numonly()
