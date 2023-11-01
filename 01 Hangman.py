@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 24 21:33:56 2023
 
-@author: emilygoff
-"""
 
 #Hangman game
 import random
@@ -32,11 +26,11 @@ def hangman():
             letter = input("please enter a letter... ")
             
             #check only 1 letter is given
-            
             if len(letter) != 1 or not letter.isalpha():
                 print("Please enter a single letter.")
                 continue
-            
+                
+            #let user know if a letter has already been guessed
             if letter in chosen_letters:
                 print("Uh oh! Letter has already been guessed - try again!")
                 continue
@@ -62,8 +56,12 @@ def hangman():
                 remaining_tries = remaining_tries -1
                 print("incorrect. Your chosen letters so far are --->",chosen_letters)
                 continue
+
+    #if all letters have been guessed, there will be no more "-" present
     if "_" not in arr:
         print("Congrats! You have guessed the correct word ",random_word)
+    
+    #otherwise the other option is the number of tries has reduced to 0
     else:
         print("Out of tries! The word is ", random_word)
     
